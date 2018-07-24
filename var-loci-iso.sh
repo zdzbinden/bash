@@ -41,13 +41,3 @@ cd ..
 rm -r var-loci-iso.output
 
 echo "$loci with $2 snps separated into $loci .loci files and stored in the directory $loci.loci.$2.SNPS in your current directory"
-
-
-#cat $1 | awk 'BEGIN {FS=""; x=1} {if ($1 ~ />/) {for (i='''$start'''-1; i<=NF; i++) printf "%s%c",$i, (i=='''$start'''-1)?ORS:OFS=" " >> x".txt"} else {x=x+1}}'
-
-#Move isolated loci to a directory called 'loci'
-
-#mkdir loci
-#mv *.txt loci
-#LOCI=`ls loci | wc -w`
-#cd loci
